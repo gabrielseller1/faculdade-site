@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Moderna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0044cc, #002699);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        #banner {
+            background: url('https://source.unsplash.com/1600x900/?university,students') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 200px 20px;
+            position: relative;
+        }
+        #banner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        #banner h1, #banner p, #banner a {
+            position: relative;
+            z-index: 1;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #cc5500;
+        }
+        section {
+            padding: 70px;
+            text-align: center;
+            background: white;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            width: 80%;
+        }
+        .cursos-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .curso {
+            background-color: #eef;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .curso:hover {
+            transform: translateY(-5px);
+        }
+        .curso img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0044cc;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #002699;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Faculdade Moderna
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#infraestrutura">Infraestrutura</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="banner">
+        <h1>Transforme seu futuro com educação de qualidade</h1>
+        <p>Conheça nossos cursos e venha estudar em uma das melhores faculdades do país.</p>
+        <a href="#cursos" class="btn">Saiba Mais</a>
+    </section>
+    
+    <section id="cursos">
+        <h2>Nossos Cursos</h2>
+        <div class="cursos-container">
+            <div class="curso">
+                <img src="https://source.unsplash.com/400x300/?business" alt="Administração">
+                <h3>Administração</h3>
+                <p>Preparação para o mercado de trabalho com foco em gestão e estratégia.</p>
+            </div>
+            <div class="curso">
+                <img src="https://source.unsplash.com/400x300/?technology" alt="Engenharia da Computação">
+                <h3>Engenharia da Computação</h3>
+                <p>Formação inovadora para o futuro da tecnologia.</p>
+            </div>
+            <div class="curso">
+                <img src="https://source.unsplash.com/400x300/?law" alt="Direito">
+                <h3>Direito</h3>
+                <p>Capacitação completa para atuar no universo jurídico.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Faculdade Moderna - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
